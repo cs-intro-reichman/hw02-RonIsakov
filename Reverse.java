@@ -25,8 +25,9 @@ public class Reverse {
 
 			
 		//printing the middle letter plus String backwarsd
-		System.out.println("The middle character is " + middle);
 		System.out.println(backwards);
+		System.out.println("The middle character is " + middle);
+	
 
 	}
 }
