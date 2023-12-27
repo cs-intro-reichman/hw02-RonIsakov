@@ -8,11 +8,11 @@ public class DamkaBoard {
 
         // Printing the Damka board with num*num dimensions
         for (int i = 0; i < num; i++) {
-            for (int j = 0; j < num; j++) {
+            for (int j = 0; j < num * 2; j++) {
                 if ((i + j) % 2 == 0) {
                     System.out.print("*");
                 } else {
-                    System.out.print("  ");
+                    System.out.print(" ");
                 }
             }
             System.out.println();
