@@ -28,7 +28,7 @@ public class OneOfEachStats {
 	 for(int i = 0;i < T; i++){
 		 //while loop runs the test to see how many children are in the family to have a boy and a gril
 		while(!b || !g){
-		if(rnd <= 0.5){
+		if(rnd < 0.5){
 			b = true;
 		}
 		else{
