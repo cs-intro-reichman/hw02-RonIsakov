@@ -5,14 +5,19 @@ public class Perfect {
 	int num = Integer.parseInt(args[0]);
 	
 	//defining a string and an int
-	String print = num + " is a perfect number since " + num + " =";
+	String print = num + " is a perfect number since " + num + " = ";
 	int sum = 0;
 	
 	// locking for all the devisors of a number and storing the sum of them
 	// in sum a list of them in print
 	for(int i = 1; i<num ; i++){
 	if(num%i == 0){
-	print = print + (  " + " + i );
+		if(i == 1 ){
+	print = print + i ;
+		}
+		else{
+			print = print + (  " + " + i );
+		}
 	sum = sum +i;
 	}
 }
