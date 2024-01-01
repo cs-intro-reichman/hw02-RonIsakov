@@ -60,11 +60,11 @@ public class OneOfEachStats {
 	System.out.println("Number of families with 4 or more children: " + childrenmax);
 	
 	// determens and prints the most fruquent catagory of family
-	if((children2 > children3) && (children2 > childrenmax)){
+	if((children2 => children3) && (children2 => childrenmax)){
 		System.out.println("The most common number of children is 2.");
 	}
 		else{
-			if(children3 > childrenmax){
+			if(children3 => childrenmax){
 					System.out.println("The most common number of children is 3.");
 			}
 			else{
