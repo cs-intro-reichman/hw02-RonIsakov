@@ -54,7 +54,7 @@ public class OneOfEachStats {
 	} 
 	// printing the results of how many families are in each category
 	avrage = avrage/T;
-	System.out.println("Avrege: " + avrage + " children to get at least one of each gender.");
+	System.out.println("Averege: " + avrage + " children to get at least one of each gender.");
 	System.out.println("Number of families with 2 children: " + children2);
 	System.out.println("Number of families with 3 children: " + children3);
 	System.out.println("Number of families with 4 or more children: " + childrenmax);
