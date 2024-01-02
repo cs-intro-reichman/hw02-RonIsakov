@@ -28,7 +28,7 @@ public class OneOfEachStats {
 	 for(int i = 0;i < T; i++){
 		 //while loop runs the test to see how many children are in the family to have a boy and a gril
 		while(!b || !g){
-		if(rnd < 0.5){
+		if(rnd > 0.5){
 			b = true;
 		}
 		else{
@@ -53,18 +53,18 @@ public class OneOfEachStats {
 		 
 	} 
 	// printing the results of how many families are in each category
-	avrage = avrage/T;
-	System.out.println("Averege: " + avrage + " children to get at least one of each gender.");
+	avrage = (double)avrage/(double)T;
+	System.out.println("Avrege: " + avrage + " children to get at least one of each gender.");
 	System.out.println("Number of families with 2 children: " + children2);
 	System.out.println("Number of families with 3 children: " + children3);
 	System.out.println("Number of families with 4 or more children: " + childrenmax);
 	
 	// determens and prints the most fruquent catagory of family
-	if((children2 => children3) && (children2 => childrenmax)){
+	if((children2 > children3) && (children2 > childrenmax)){
 		System.out.println("The most common number of children is 2.");
 	}
 		else{
-			if(children3 => childrenmax){
+			if(children3 > childrenmax){
 					System.out.println("The most common number of children is 3.");
 			}
 			else{
